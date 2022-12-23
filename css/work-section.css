@@ -1,0 +1,455 @@
+/* css for mobile */
+.grid-container {
+  display: grid;
+  font-family: 'Poppins', sans-serif;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 100px;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  background: #fff;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+  margin-top: 50px;
+}
+
+.project-title {
+  margin-bottom: 0%;
+}
+
+.project-title-dt {
+  display: none;
+}
+
+.client {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.client-dt {
+  display: none;
+}
+
+.p2 {
+  display: none;
+}
+
+h3 {
+  color: #344563;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.client-ul {
+  display: flex;
+  gap: 30px;
+  color: #7a869a;
+}
+
+.dt-languages {
+  display: none;
+}
+
+.languages {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 5px;
+  padding-left: 0%;
+}
+
+.languages li {
+  background: #ebebff;
+  border-radius: 8px;
+  align-items: center;
+  padding: 4px 12px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #6070ff;
+}
+
+.btn-border {
+  width: 135px;
+  height: 50px;
+  padding: 16px;
+  gap: 12px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #396df2;
+  text-decoration: none;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+}
+
+.portfolio-image-1 {
+  background-image: url("../images/portfolio_1.png");
+  width: 295px;
+  height: 220px;
+  border-radius: 8px;
+  align-self: center;
+  margin-top: 10px;
+}
+
+.portfolio-image-2 {
+  background-image: url("../images/portfolio_2.png");
+  width: 295px;
+  height: 220px;
+  border-radius: 8px;
+  align-self: center;
+  margin-top: 10px;
+}
+
+.portfolio-image-3 {
+  background-image: url("../images/portfolio_3.png");
+  width: 295px;
+  height: 220px;
+  border-radius: 8px;
+  align-self: center;
+  margin-top: 10px;
+}
+
+.portfolio-image-4 {
+  background-image: url("../images/portfolio_4.png");
+  width: 295px;
+  height: 220px;
+  border-radius: 8px;
+  align-self: center;
+  margin-top: 10px;
+}
+
+/* popup window */
+
+.dt-popup {
+  display: none;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  padding: 5px;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+  z-index: 10;
+  background: #fff;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header {
+  padding: 5px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-header .title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+}
+
+.modal-header .close-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.25rem;
+  color: #67798e;
+}
+
+.modal-body {
+  padding: 5px 15px;
+  margin-bottom: 10px;
+}
+
+.popup-client {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 30px;
+}
+
+.popup-client-heading {
+  color: #344563;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.popup-client-ul {
+  display: flex;
+  gap: 30px;
+  color: #7a869a;
+}
+
+.modal-body .description {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #344563;
+}
+
+.modal-btn {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 10px;
+  border-top: 1px solid #ebecf0;
+}
+
+.popup-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 5px;
+  gap: 10px;
+  width: 120px;
+  height: 25px;
+  bottom: 4px;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+}
+
+.popup-portfolio-image {
+  background-image: url("../images/portfolio_1.png");
+  width: 295px;
+  height: 220px;
+  border-radius: 8px;
+  align-self: center;
+  margin-top: 3px;
+}
+
+.popup-image {
+  display: none;
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: #c1c7d0;
+  mix-blend-mode: multiply;
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+/* css for desktop */
+
+@media only screen and (min-width: 768px) {
+  .grid-container {
+    display: grid;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 100px;
+  }
+
+  .grid-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 0;
+    padding: 24px;
+    background: #fff;
+    border: 1px solid #dfe1e6;
+    border-radius: 16px;
+    margin-top: 50px;
+  }
+
+  .work-description {
+    margin: 10px;
+  }
+
+  .portfolio-image-1 {
+    background-image: url("../images/dt-tonic.png");
+    width: 544px;
+    height: 448px;
+    border-radius: 8px;
+    align-self: center;
+    margin: 10px;
+  }
+
+  .portfolio-image-2 {
+    background-image: url("../images/dt-multi-post.png");
+    width: 544px;
+    height: 448px;
+    border-radius: 8px;
+    align-self: center;
+    margin: 10px;
+    order: 2;
+  }
+
+  .portfolio-image-3 {
+    background-image: url("../images/dt-fb.png");
+    width: 544px;
+    height: 448px;
+    border-radius: 8px;
+    align-self: center;
+    margin: 10px;
+  }
+
+  .portfolio-image-4 {
+    background-image: url("../images/dt-uber.png");
+    width: 544px;
+    height: 448px;
+    border-radius: 8px;
+    align-self: center;
+    margin: 10px;
+    order: 2;
+  }
+
+  .portfolio-image-1:hover,
+  .portfolio-image-2:hover,
+  .portfolio-image-3:hover,
+  .portfolio-image-4:hover {
+    transform: scale(1.1);
+  }
+
+  .project-title {
+    display: none;
+  }
+
+  .project-title-dt {
+    display: flex;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: #091e42;
+    margin-bottom: 0%;
+  }
+
+  .p1 {
+    display: none;
+  }
+
+  .p2 {
+    display: flex;
+    width: 496px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #344563;
+  }
+
+  .p2:hover {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .client,
+  .client-ul {
+    display: none;
+  }
+
+  .client-dt {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 50px;
+  }
+
+  h3 {
+    color: #344563;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .client-dt-ul {
+    display: flex;
+    gap: 30px;
+    color: #7a869a;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .languages {
+    display: none;
+  }
+
+  .dt-languages {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 5px;
+    padding-left: 0%;
+  }
+
+  .dt-languages li {
+    background: #ebebff;
+    border-radius: 8px;
+    align-items: center;
+    padding: 4px 12px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    color: #6070ff;
+  }
+
+  /* popup window */
+
+  .mob-popup {
+    display: none;
+  }
+
+  .dt-popup {
+    display: flex;
+    gap: 5px;
+  }
+
+  .popup-portfolio-image {
+    display: none;
+  }
+
+  .popup-image {
+    background-image: url("../images/dt-tonic.png");
+    display: block;
+    width: 544px;
+    height: 448px;
+    border-radius: 8px;
+    align-self: center;
+    margin: 10px 50px;
+  }
+
+  .modal-btn {
+    border-top: none;
+    gap: 3px;
+  }
+}

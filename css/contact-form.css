@@ -1,0 +1,98 @@
+/* css for mobile */
+
+.contact-me {
+  border-top-left-radius: 100px;
+  height: 680px;
+  background: #6070ff;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.contact-container {
+  background-image: url("../images/contact-form shapes.png");
+  background-size: 100%;
+}
+
+.contact-heading {
+  color: #fff;
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
+}
+
+.contact-description {
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  color: #ebebff;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input {
+  height: 48px;
+}
+
+input,
+.form-input {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+}
+
+.form-input {
+  background: #fff;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.contact-button {
+  width: 140px;
+  height: 48px;
+  background: #fff;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  color: #6070ff;
+}
+
+/* css for desktop */
+
+@media only screen and (min-width: 768px) {
+  .contact-container {
+    background-image: url("../images/dt-contact-form.png");
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-item {
+    width: 500px;
+  }
+
+  .contact-button {
+    align-self: center;
+  }
+
+  .form-input::placeholder {
+    transition: 1s;
+  }
+
+  .form-input:hover::placeholder {
+    transform: translate(5px, 0);
+  }
+}

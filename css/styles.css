@@ -1,0 +1,256 @@
+/* css for mobile version */
+body {
+  background: #e5e5e5;
+  margin: 0%;
+}
+
+body.active {
+  background: #6070ff;
+  overflow-y: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 718px;
+  padding: 20px;
+  background: #fff;
+  border-bottom-left-radius: 100px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 48px;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px 0;
+  transition: all 0.3s ease;
+  background-color: #7f8cff;
+}
+
+.nav-options-ul {
+  display: none;
+}
+
+.hamburger {
+  display: block;
+  position: relative;
+  z-index: 1;
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+  background-color: white;
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+  background-color: white;
+}
+
+.nav-menu {
+  position: fixed;
+  list-style: none;
+  top: -5%;
+  left: -1000%;
+  gap: 0;
+  flex-direction: column;
+  background-color: #6070ff;
+  opacity: 0.9;
+  width: 100%;
+  text-align: left;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  color: #fff;
+  font-weight: 60;
+  font-size: 32px;
+  line-height: 44px;
+  transition: 0.1s;
+  height: 100vh;
+  padding-top: 80px;
+}
+
+.nav-menu * {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-options {
+  margin: 16px 0;
+}
+
+.nav-menu.active {
+  left: 0;
+}
+
+.introduction {
+  background-image: url("../images/header-shapes mobile.png");
+  background-size: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 604px;
+}
+
+.introduction a {
+  width: 117px;
+  height: 24px;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7f8cff;
+}
+
+.header {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+}
+
+.intro {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.profiles {
+  padding-left: 0%;
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.button {
+  font-family: 'Poppins', sans-serif;
+  color: #7f8cff;
+  text-decoration: none;
+  border: none;
+  width: 93px;
+  height: 48px;
+  border-radius: 15px;
+  background: #fff;
+}
+
+.button:hover {
+  color: #fff;
+  background: #6070ff;
+}
+
+.button:active {
+  color: #fff;
+  background: #2230d2;
+}
+
+/* css for desktop version */
+
+@media only screen and (min-width: 768px) {
+  .logo {
+    animation-name: rotate360;
+    animation-duration: 2s;
+  }
+
+  @keyframes rotate360 {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .hamburger {
+    display: none;
+    cursor: pointer;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+
+  .container {
+    height: 916px;
+    background: #fff;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 400px;
+    align-items: center;
+    height: 72px;
+  }
+
+  .nav-options-ul {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+  }
+
+  .nav-options-ul-li-a {
+    text-decoration: none;
+    color: #344563;
+  }
+
+  .introduction {
+    background-image: url("../images/dt-header-bg.png");
+    width: 100%;
+    height: 721.46px;
+    left: 34.6px;
+    top: 119px;
+  }
+
+  .intro-area {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    gap: 12px;
+    width: 920px;
+    height: 268px;
+    margin-top: 10%;
+    margin-left: 15%;
+  }
+
+  .header {
+    font-weight: 700;
+    font-size: 48px;
+    color: #091e42;
+    line-height: 60px;
+    letter-spacing: 0.37px;
+  }
+
+  .intro {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #344563;
+  }
+
+  .intro:hover {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+  }
+}
